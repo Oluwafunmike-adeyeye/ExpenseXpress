@@ -1,15 +1,15 @@
-ExpenseXpress Documentation
+<h1>ExpenseXpress Documentation</h1>
 Welcome to ExpenseXpress, a fintech application designed to simplify expense management for merchants. This project leverages Next.js for its frontend, Tailwind CSS for styling, TypeScript for type safety, and Redux Toolkit for efficient state management.
 
-Getting Started
-To start using ExpenseXpress locally, follow these steps:
+#Getting Started
+#To start using ExpenseXpress locally, follow these steps:
 
-Clone the Repository:
+#Clone the Repository:
 
-bash
-Copy code
-git clone <repository-url>
-cd <project-directory>
+#bash
+#Copy code
+#git clone <repository-url>
+#cd <project-directory>
 Install Dependencies:
 
 bash
@@ -47,7 +47,7 @@ Tailwind CSS Documentation
 TypeScript Documentation
 Redux Toolkit Documentation
 Deployment
-ExpenseXpress is deployed on Netlify. Visit ExpenseXpress to explore the live application.
+ExpenseXpress is deployed on Netlify. Visit https://expensexpress.netlify.app/ to explore the live application.
 
 Contributions
 Contributions to ExpenseXpress are welcome! Feel free to fork the repository, make improvements, and submit pull requests.
