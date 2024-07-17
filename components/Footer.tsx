@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({
   year,
 }) => {
   return (
-    <footer className="rounded-[25px] bg-primary sm:px-10 font-semibold text-white text-xl py-8 flex items-center justify-center">
+    <footer className="rounded-[25px] bg-primary px-10 font-semibold text-white text-xl py-8 flex items-center justify-center">
       <div className="flex gap-[100px]">
         <div>
           <h3 className="mb-2">Contact Information</h3>
