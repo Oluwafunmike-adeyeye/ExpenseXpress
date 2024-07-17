@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '@/store';
+import { RootState } from '../../store';
 import axios from 'axios';
-import { addItem, clearItem } from '@/store/expensesSlice'; 
-import { addInvoice } from '@/store/invoiceSlice';
-import { generateInvoiceNumber } from '@/utils/generateInvoiceNumber'; 
+import { addItem, clearItem } from '../../store/expensesSlice'; 
+import { addInvoice } from '../../store/invoiceSlice';
+import { generateInvoiceNumber } from '../../utils/generateInvoiceNumber'; 
 
 interface Item {
   id: number;
@@ -113,7 +113,7 @@ const Invoices = () => {
   return (
     <div className="container mx-auto text-white my-8">
       <h1 className="text-2xl font-bold mb-4">Invoices</h1>
-      <div className="mb-8 flex gap-6">
+      <div className="mb-8 xl:flex grid grid-cols-2 gap-6">
         <input
           type="text"
           placeholder="Client Name"
@@ -139,7 +139,7 @@ const Invoices = () => {
       
       <div className="mb-8">
         <h2 className="text-xl font-bold mb-6">Add Invoice Items</h2>
-        <div className="flex gap-6 mb-2">
+        <div className="gap-6 xl:flex grid grid-cols-2 mb-2">
           <input
             type="text"
             placeholder="Description"

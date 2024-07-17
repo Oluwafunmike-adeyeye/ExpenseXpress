@@ -1,4 +1,4 @@
-// invoiceSlice.ts
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface Invoice {
@@ -10,27 +10,24 @@ interface Invoice {
   items: { id: number; name: string; quantity: number; price: number }[];
 }
 
-interface InvoiceState {
+interface InvoicesState {
   invoices: Invoice[];
 }
 
-const initialState: InvoiceState = {
+const initialState: InvoicesState = {
   invoices: [],
 };
+
 
 const invoiceSlice = createSlice({
   name: 'invoices',
   initialState,
   reducers: {
-    addInvoice: (state, action: PayloadAction<Invoice>) => {
+    addInvoice(state, action: PayloadAction<Invoice>) {
       state.invoices.push(action.payload);
-    },
-    clearInvoices: (state) => {
-      state.invoices = [];
     },
   },
 });
 
-export const { addInvoice, clearInvoices } = invoiceSlice.actions;
-
+export const { addInvoice } = invoiceSlice.actions;
 export default invoiceSlice.reducer;

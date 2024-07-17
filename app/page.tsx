@@ -6,8 +6,8 @@ const Home = () => {
   return (
       <div className="container mx-auto h-full my-12 bg-secondary">
         <div className="flex flex-col items-center justify-center px-2 text">
-          <h2 className='font-extrabold py-8 w-[1000px] text-center text-6xl text-primary'>Simplify Your Business Expenses with ExpenseXpress</h2>
-          <p className="text-center px-4 py-4 w-[700px] text-xl">Transform your financial operations with ExpenseXpress. Stay on top of your finances with ease, whether you&apos;re managing invoices, or tracking expenses. </p>
+          <h2 className='font-extrabold py-8 w-[600px] xl:w-[1000px] text-center text-3xl xl:text-6xl text-primary'>Simplify Your Business Expenses with ExpenseXpress</h2>
+          <p className="text-center px-4 py-4 w-[500px] xl:w-[700px] text-xl">Transform your financial operations with ExpenseXpress. Stay on top of your finances with ease, whether you&apos;re managing invoices, or tracking expenses. </p>
           <div className="flex gap-6 py-6 text-xl">
             <button className="bg-primary px-4 py-2 rounded-[20px] hover:bg-secondary hover:border hover:border-white">Sign in</button>
             <button className="bg-secondary border border-white px-4 py-2 rounded-[20px] hover:bg-primary hover:border-none">Sign up</button>

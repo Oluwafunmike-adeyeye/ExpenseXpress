@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '@/store';
-import { addItem, clearItems } from '@/store/expensesSlice';
+import { RootState } from '../../store';
+import { addItem, clearItems } from '../../store/expensesSlice';
 
 interface Item {
   id: number;
@@ -43,7 +43,7 @@ const Expenses: React.FC = () => {
     <div className='container mx-auto my-8 text-white py-8'>
       <h1 className="text-4xl font-bold mb-4 hover:text-primary">Expenses</h1>
       <div className='my-5 py-8 px-4'>
-        <div className='flex gap-8 py-8'>
+        <div className='grid grid-cols-2 xl:flex gap-8 py-8'>
           <input
             type="text"
             placeholder="Name"
