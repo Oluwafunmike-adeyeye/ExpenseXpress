@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>ExpenseXpress Documentation</h1>
+<p>Welcome to ExpenseXpress, a fintech application designed to simplify expense management for merchants. This project leverages Next.js for its frontend, Tailwind CSS for styling, TypeScript for type safety, and Redux Toolkit for efficient state management.</p>
 
-## Getting Started
+<h2>Getting Started</h2>
+<p>To start using ExpenseXpress locally, follow these steps:</p>
 
-First, run the development server:
+<p>Clone the Repository:</p>
+<pre><code>git clone &lt;repository-url&gt;
+cd &lt;project-directory&gt;
+</code></pre>
 
-```bash
-npm run dev
+<p>Install Dependencies:</p>
+<pre><code>npm install
+</code></pre>
+
+<p>Set Up Environment Variables:</p>
+<ul>
+  <li>Create a <code>.env.local</code> file in the root directory.</li>
+  <li>Add environment variables as needed (e.g., API keys, configuration variables).</li>
+</ul>
+
+<p>Run the Development Server:</p>
+<pre><code>npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</code></pre>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>Open in Your Browser:</p>
+<p>Open <a href="http://localhost:3000">http://localhost:3000</a> to view the application.</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2>Features</h2>
+<ul>
+  <li><strong>Dashboard:</strong> View summary of expenses and income.</li>
+  <li><strong>Expense Management:</strong> Add, edit, and delete expenses.</li>
+  <li><strong>Invoice Generation:</strong> Generate invoices for transactions.</li>
+  <li><strong>Reporting:</strong> Generate reports based on expense categories.</li>
+</ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h2>Technologies Used</h2>
+<ul>
+  <li><strong>Next.js:</strong> React framework for building server-side rendered applications.</li>
+  <li><strong>Tailwind CSS:</strong> Utility-first CSS framework for styling.</li>
+  <li><strong>TypeScript:</strong> Adds type safety to JavaScript.</li>
+  <li><strong>Redux Toolkit:</strong> State management library for predictable state containers.</li>
+</ul>
 
-## Learn More
+<h2>Learn More</h2>
+<p>To learn more about each technology used in ExpenseXpress, refer to their respective documentation:</p>
+<ul>
+  <li><a href="https://nextjs.org/docs">Next.js Documentation</a></li>
+  <li><a href="https://tailwindcss.com/docs">Tailwind CSS Documentation</a></li>
+  <li><a href="https://www.typescriptlang.org/docs/">TypeScript Documentation</a></li>
+  <li><a href="https://redux-toolkit.js.org/">Redux Toolkit Documentation</a></li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+<h2>Deployment</h2>
+<p>ExpenseXpress is deployed on Netlify. Visit <a href="https://expensexpress.netlify.app/">https://expensexpress.netlify.app/</a> to explore the live application.</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<h2>Contributions</h2>
+<p>Contributions to ExpenseXpress are welcome! Feel free to fork the repository, make improvements, and submit pull requests.</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>For any issues or feedback, please create an issue on GitHub.</p>
