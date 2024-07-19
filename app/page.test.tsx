@@ -1,11 +1,13 @@
-
 import { render, screen } from '@testing-library/react';
 import Home from './page';
-import '@testing-library/jest-dom/extend-expect'; 
+import '@testing-library/jest-dom/extend-expect';
 
-jest.mock('next/image', () => ({ src, alt }: { src: string, alt: string }) => (
+
+const MockedImage = ({ src, alt }: { src: string, alt: string }) => (
   <img src={src} alt={alt} />
-));
+);
+MockedImage.displayName = 'NextImage';
+jest.mock('next/image', () => MockedImage);
 
 describe('Home Page', () => {
   it('renders the main heading', () => {
