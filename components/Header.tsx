@@ -15,12 +15,13 @@ const Header = () => {
   return (
     <header className="container mx-auto my-6">
       <div className="flex justify-between items-center text-white">
-        <h1 className="p-4 text-5xl text-white font-bold text-center hover:text-primary">
+        <h1 className="p-4 text-5xl font-bold text-center hover:text-primary">
           ExpenseXpress
         </h1>
         <button
           className="md:hidden p-4 focus:outline-none"
           onClick={toggleMenu}
+          aria-label="Toggle menu"
         >
           {isOpen ? (
             <AiOutlineClose className="w-6 h-6" /> 
@@ -29,9 +30,10 @@ const Header = () => {
           )}
         </button>
         <ul
-          className={`md:flex items-center gap-4 text-xl font-bold ${
+          className={`md:flex items-center gap-4 text-xl font-bold transition-transform duration-300 ${
             isOpen ? 'block' : 'hidden'
           } md:block`}
+          role="navigation"
         >
           <li className="p-4 hover:text-primary">
             <Link href="/">Home</Link>
