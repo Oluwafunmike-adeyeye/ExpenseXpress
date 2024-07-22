@@ -4,7 +4,6 @@ interface FooterProps {
   email: string;
   phone: string;
   aboutUsLink: string;
-  contactUsLink: string;
   servicesLink: string;
   faqsLink: string;
   privacyLink: string;
@@ -18,7 +17,6 @@ const Footer: React.FC<FooterProps> = ({
   email,
   phone,
   aboutUsLink,
-  contactUsLink,
   servicesLink,
   faqsLink,
   privacyLink,
@@ -28,8 +26,8 @@ const Footer: React.FC<FooterProps> = ({
   year,
 }) => {
   return (
-    <footer className="rounded-[25px] bg-primary px-10 font-semibold text-white text-xl py-8 flex items-center justify-center">
-      <div className="flex gap-[100px]">
+    <footer className="rounded-[25px] w-full bg-primary px-6 xl:px-10 font-semibold text-white text-sm xl:text-xl py-8 flex items-center justify-center">
+      <div className="flex gap-4 xl:gap-[100px]">
         <div>
           <h3 className="mb-2">Contact Information</h3>
           <ul>
@@ -41,7 +39,6 @@ const Footer: React.FC<FooterProps> = ({
           <h3 className="mb-2">Links</h3>
           <ul>
             <li><Link href={aboutUsLink} className="text-white hover:text-white">About Us</Link></li>
-            <li><Link href={contactUsLink} className="text-white hover:text-white">Contact Us</Link></li>
             <li><Link href={servicesLink} className="text-white hover:text-white">Services</Link></li>
             <li><Link href={faqsLink} className="text-white hover:text-white">FAQs</Link></li>
             <li><Link href={privacyLink} className="text-white hover:text-white">Privacy</Link></li>
@@ -51,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({
           </ul>
         </div>
         <div>
-          <p className="text-base">&copy; {year}. All rights reserved.</p>
+          <p className="xl:text-base">&copy; {year}. All rights reserved.</p>
         </div>
       </div>
     </footer>
