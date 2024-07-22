@@ -31,7 +31,7 @@ const Header = () => {
             )}
           </button>
           <ul
-            className={`md:flex items-center gap-4 text-xl font-bold transition-transform duration-300 ${
+            className={`md:flex items-center gap-4 text-base xl:text-xl font-bold transition-transform duration-300 ${
               isOpen ? 'block' : 'hidden'
             } md:block`}
             role="navigation"
