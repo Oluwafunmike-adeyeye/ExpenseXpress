@@ -33,7 +33,6 @@ yarn dev
   <li><strong>Dashboard:</strong> View summary of expenses and income.</li>
   <li><strong>Expense Management:</strong> Add, edit, and delete expenses.</li>
   <li><strong>Invoice Generation:</strong> Generate invoices for transactions.</li>
-  <li><strong>Reporting:</strong> Generate reports based on expense categories.</li>
 </ul>
 
 <h2>Technologies Used</h2>
