@@ -19,7 +19,7 @@ const Home = () => {
             <p className="xl:w-1/2 sm:mt-6 order-2 xl:order-none pt-2">Generate invoices in seconds with our easy-to-use invoice generator. Simply enter your customer details, select items or services rendered, and customize the invoice as needed.</p>
             <Image 
               src="/assets/invoice.png" 
-              width={400} 
+              width={500} 
               height={400}
               className="order-1 xl:order-none pt-2" 
               alt="" 
