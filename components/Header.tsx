@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="container mx-auto my-6 w-full">
       <div className="flex justify-between items-center text-white">
-        <h1 className="p-4 text-3xl xl:text-5xl font-bold text-center hover:text-primary">
+        <h1 className="p-4 text-2xl xl:text-5xl font-bold text-center hover:text-primary">
           ExpenseXpress
         </h1>
         <div className='flex flex-col items-center'>
